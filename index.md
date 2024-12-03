@@ -2,9 +2,6 @@
 layout: default
 ---
 
-# Machine Learning Project: Uber Fare Price Predictor
-## Team: Ari Nair, Leo Alexeyev, Suhas Kumar, Sanjay Vijayasekar, Adil Shaik
-
 # Introduction/Background:
 
 With the rise of digital taxi services like Uber and Lyft, interest in analyzing the digital taxi industry has surged, especially in urban areas. As cities expand, transportation becomes more complex due to factors such as congestion and population growth, making it critical to understand elements affecting fare and trip duration. By analyzing the data surrounding the digital taxi industry, predictive models can be developed for factors like fare amounts. 
