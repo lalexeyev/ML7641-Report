@@ -116,11 +116,11 @@ Although our model performed well, there are still avenues for further optimizat
 
 ## Gaussian Mixture Model (Unsupervised Learning):
 
-After applying Gaussian Mixture Models to cluster and predict Uber fares using different feature combinations from the dataset, we evaluated three 2D models and one 3D model after data cleaning. The 2D models used feature combinations of sum_x (passenger count + distance), weighted_sum_x (weighted passenger count and distance), and mult_x (passenger count × distance). Each model was compared using Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R^2 scores. In the 2D models, the mult_x combination achieved the best results with the lowest RMSE of 1.71, indicating the best predictive accuracy, though its R^2 score of 0.79 was slightly lower than that of the sum_x model, which achieved 0.87. 
+After applying Gaussian Mixture Models to cluster and predict Uber fares using different feature combinations from the dataset, we evaluated three 2D models and one 3D model after data cleaning. The 2D models used feature combinations of sum_x (passenger count + distance), weighted_sum_x (weighted passenger count and distance), and mult_x (passenger count × distance). Each model was compared using Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R^2 scores. In the 2D models, the mult_x combination achieved the best results with the lowest RMSE of 1.66, indicating the best predictive accuracy, though its R^2 score of 0.80 was slightly lower than that of the sum_x model, which achieved 0.87. 
 
 ![2D Clusters](cluster_2d.png)
 
-The sum_x model explained the most variance in fare predictions but at the cost of significantly higher RMSE (5.48), showing less reliability for accurate predictions. The weighted_sum_x model balanced the features but did not do so well with an RMSE of 4.03 and the lowest R^2 of 0.68.
+The sum_x model explained the most variance in fare predictions but at the cost of significantly higher RMSE (2.47), showing less reliability for accurate predictions. The weighted_sum_x model balanced the features but did not do so well with an RMSE of 2.95 and the lowest R^2 of 0.68.
 
 The 3D model, which used passenger count, distance, and fare amount, provided insights into feature interactions. However, it had a higher RMSE of 2.40 and a lower R^2 of 0.58 compared to the 2D models. The nature of passenger count created slices in the clusters, negatively impacting the model's performance. Despite its limitations, the 3D model allowed for broader clustering perspectives, although it lacked the precision of the mult_x 2D model.
 
@@ -177,7 +177,7 @@ These next steps are to guide the model to increase the R-squared value while al
 | Name           | Proposal Contributions        |
 |----------------|-------------------------------|
 | Leo            | Implemented random forest model for our dataset, created visualizations in jupyter notebook, did write-up of random forest results, udpated github pages |
-| Ari            | Implemented data preprocessing methods (data cleaning, transformation, engineering), experimented with data imbalance method. Created and recorded presentation/video |
+| Ari            | Implemented data preprocessing and methods (data cleaning, transformation, engineering), experimented with data imbalance method. Implement linear regression method, Created and recorded presentation/video |
 | Adil           | Implemented GMM model for our dataset for various 2D and 3D implementations, created visualiations for results |
 | Suhas          | Created write-up for GMM model results and discussion |
 | Sanjay         | Analyed and created write-up comparing models to one another, created table summarizing results |
